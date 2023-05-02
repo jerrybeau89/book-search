@@ -26,20 +26,13 @@ const resolvers = {
           throw new AuthenticationError('Incorrect password, try again.');
         }
       const token = signToken(user);
-
-      if (!user && !token){
-        throw new AuthenticationError('Sorry, something went wrong.')
-      }
         return { token, user };
     },
 
-    addUser: async (parent, args) => {
+    addUser: async (parent, {username, email, password}) => {
 
-      const user = await User.create(args);
+      const user = await User.create({username, email, password});
       const token = signToken(user);
-      if (!user && !token){
-        throw new AuthenticationError('Sorry, something went wrong.')
-      }
       return { token, user };
     },
 
