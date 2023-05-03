@@ -43,7 +43,7 @@ Navigate to the integrated terminal associated with the app if creating your own
 
 or visit 
 
-https://jerrybeau89.github.io/book-search/
+https://buchsuche.herokuapp.com/
 
 ## License
 MIT License
@@ -75,7 +75,7 @@ SOFTWARE.
 No tests for this app
 
 ## Link
-https://jerrybeau89.github.io/book-search/
+https://buchsuche.herokuapp.com/
 
 ## Questions
 
